@@ -105,8 +105,6 @@ internal class Part_1_2025_Day_01 : Days
       string result = "";
       long totalCount = 0;
 
-      Debug.WriteLine($"------------------------------------------------------------------------------------------------------------------------------");
-
       //
       // Automatically imported Text !!
       //
