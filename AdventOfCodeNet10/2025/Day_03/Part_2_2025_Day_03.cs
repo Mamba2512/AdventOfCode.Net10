@@ -84,7 +84,7 @@ namespace AdventOfCodeNet10._2025.Day_03
         digits.Add(int.Parse(c.ToString()));
       }
       copiedDigits = digits.ToList();
-
+      //var temp = digits.OrderByDescending(x => x).ToList();
       digits.Sort();
       digits.Reverse();
 
@@ -105,8 +105,7 @@ namespace AdventOfCodeNet10._2025.Day_03
 
       currentSequence.Add(copiedDigits[selectedIndex]);
       var remainingBank = input.Substring(selectedIndex + 1);
-      GetSequenceOfBatteries(remainingBank, currentSequence);
-      return currentSequence;
+      return GetSequenceOfBatteries(remainingBank, currentSequence);
     }
   }
 }
